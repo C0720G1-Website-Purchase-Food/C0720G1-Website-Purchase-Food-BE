@@ -19,6 +19,7 @@ repositories {
 }
 
 dependencies {
+    implementation 'org.springframework.boot:spring-boot-starter'
     compileOnly 'org.projectlombok:lombok'
     annotationProcessor 'org.projectlombok:lombok'
 
@@ -35,6 +36,9 @@ dependencies {
 
     compile group: 'io.jsonwebtoken', name: 'jjwt', version: '0.9.1'
     compile group: 'org.springframework', name: 'spring-context-support', version: '5.2.12.RELEASE'
+
+    compile 'com.paypal.sdk:rest-api-sdk:1.4.2'
+
 }
 
 test {
